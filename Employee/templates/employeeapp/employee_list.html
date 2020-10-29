@@ -1,0 +1,10 @@
+{% extends 'employeeapp/base.html' %}
+{% block body_block %}
+<h1>Welcome to the list of Employees</h1>
+<ol>
+    {% for each_emp in employees %}
+    <h2><li><a href="{{each_emp.id}}">{{each_emp.user}}</a></li></h2>
+    {% endfor %}
+</ol>
+
+{% endblock %}
